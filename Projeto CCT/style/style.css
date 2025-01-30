@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Geologica", serif;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px 20px;
+    gap: 20px; /* Ajuste este valor para aumentar ou diminuir o espaço entre os itens */
+}
+.navbar a[href="#about"] {
+    /* Ajuste a margem ou posição específica para "About" */
+    margin-left: 105px; /* Mude este valor para reposicionar "About" */
+}
+.navbar a[href="#mission"] {
+    /* Ajuste a margem ou posição específica para "Mission" */
+    margin-left: 15px; /* Mude este valor para reposicionar "Mission" */
+}
+.navbar a[href="#product"] {
+    /* Ajuste a margem ou posição específica para "Product" */
+    margin-left: 20px; /* Mude este valor para reposicionar "Product" */
+}
+.navbar a[href="#contact"] {
+    color: white;
+    background-color: #2E186A;
+    border-radius: 5px;
+    margin-left: 20%; /* Mude este valor para reposicionar "Contact" */
+}
+.navbar a {
+    color: #2E186A;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 20px;
+}
+.navbar a:hover[href="#contact"] {
+    color: white;
+    background-color: #FE7624;
+    border-radius: 5px;
+}
+.navbar a:hover{
+    color: #FE7624;
+}
