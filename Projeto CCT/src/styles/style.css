@@ -51,12 +51,31 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .banner h1 {
     font-size: 4em;
+    animation: slideIn 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translate(-100%);
 }
 
 .banner h1 span {
     color: #FE775A;
+    display: inline-block;
+    animation: slideIn 1s ease-out 0.5s forwards;
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
