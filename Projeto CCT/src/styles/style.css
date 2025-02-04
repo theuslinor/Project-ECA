@@ -1,3 +1,7 @@
+:root {
+    --margin-horizontal: 120px; /* Controle geral das margens laterais */
+    --margin-vertical: 80px; /* Controle geral das margens verticais */
+}
 
 *{
     margin: 0;
@@ -13,7 +17,33 @@ html{
 
 .container{
     max-width: 1280px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-margin{
+    margin: var(--margin-vertical) var(--margin-horizontal);
+}
+
+.section-margin{
+    margin: calc(--margin-vertical * 1.5) 0;
+}
+
+/* Classes utilitárias para ajustes finos */
+.margin-top {
+    margin-top: var(--margin-vertical);
+}
+
+.margin-bottom {
+    margin-bottom: var(--margin-vertical);
+}
+
+.margin-grande {
+    margin: 150px auto;
+}
+
+.margin-pequena {
+    margin: 40px auto;
 }
 
 .flex{
@@ -39,6 +69,18 @@ header.rolagem{
 header.rolagem a, header.rolagem i{
     color: #FE775A;
 }
+
+header ul li a {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    transform: scale(1.2); 
+    color: #B669C4;
+}
+
 
 header i{
     font-size: 30px;
@@ -79,6 +121,7 @@ header ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .banner h1{
