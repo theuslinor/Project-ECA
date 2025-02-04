@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Geologica", serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.navbar {
+    background-color: #fff !important;
+    padding: 20px 80px;
+    width: 100%; /* Garante que ocupe toda a largura da tela */
+    max-width: 1200px;
+    display: flex;
+    justify-content: center; /* Centraliza os itens da navbar */
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E186A;
+    margin-right: 20px;
+}
+.navbar-nav {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav .nav-link {
+    color: #2E186A !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar-nav .nav-link[href="#contact"] {
+    color: white !important;
+    background-color: #2E186A;
+    border-radius: 10px;
+    padding: 15px 50px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+.navbar-nav .nav-link:hover[href="#contact"] {
+    background-color: #FE7624;
+}
+.navbar-nav .nav-link:hover {
+    color: #FE7624 !important;
+}
