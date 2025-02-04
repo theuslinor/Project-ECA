@@ -1,35 +1,30 @@
-:root {
-    --margin-horizontal: 120px; /* Controle geral das margens laterais */
-    --margin-vertical: 80px; /* Controle geral das margens verticais */
-}
-
-*{
+/* ========== CONTEÚDO PRINCIPAL ========== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     height: 500vh;
     background-color: #000;
 }
 
-.container{
+.container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.container-margin{
+.container-margin {
     margin: var(--margin-vertical) var(--margin-horizontal);
 }
 
-.section-margin{
+.section-margin {
     margin: calc(--margin-vertical * 1.5) 0;
 }
 
-/* Classes utilitárias para ajustes finos */
 .margin-top {
     margin-top: var(--margin-vertical);
 }
@@ -46,88 +41,22 @@ html{
     margin: 40px auto;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header{
-    width: 100%;
-    padding: 60px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: .5s;
-}
-
-header.rolagem{
-    background-color: #fff;
-    padding: 20px 4%;
-}
-
-header.rolagem a, header.rolagem i{
-    color: #FE775A;
-}
-
-header ul li a {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
-}
-
-header ul li a:hover {
-    transform: scale(1.2); 
-    color: #B669C4;
-}
-
-
-header i{
-    font-size: 30px;
-    color: #fff;
-}
-
-header ul{
-    list-style-type: none;
-}
-
-header ul li{
-    display: inline-block;
-    margin: 0 40px;
-}
-
-header ul li a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.btn-contato button{
-    width: 120px;
-    height: 40px;
-    border: 0;
-    background-color: #FE775A;
-    color: #fff;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.banner{
+.banner {
     height: 100vh;
     background-image: url(./img/fundo.jpg);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.banner h1{
+.banner h1 {
     font-size: 4em;
 }
 
-.banner h1 span{
+.banner h1 span {
     color: #FE775A;
 }
