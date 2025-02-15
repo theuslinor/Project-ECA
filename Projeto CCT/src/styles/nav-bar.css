@@ -6,22 +6,18 @@
 
 header {
     width: 100%;
-    padding: 60px 4%;
+    padding: 20px 4%;  /* Ajuste o padding conforme necessário */
     position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
+    right: 0;
     z-index: 1000;
+    background-color: #000;  /* Cor do fundo da navbar */
+    transition: background-color 0.3s ease;  /* Efeito de transição para quando mudar o fundo */
 }
 
 header.rolagem {
-    background-color: #fff;
-    padding: 20px 4%;
-}
-
-header.rolagem a, 
-header.rolagem i {
-    color: #FE775A;
+    background-color: #fff; /* Cor de fundo ao rolar */
 }
 
 header .flex {

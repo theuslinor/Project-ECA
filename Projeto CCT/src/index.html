@@ -4,39 +4,302 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <title>Conselho Tutelar</title>
-    <link rel="stylesheet" href="./styles/nav-bar.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header id="header">
+
+    <header id="header" class="bg-dark text-white py-3 fixed-top">
         <div class="container">
-            <div class="flex">
-                <a href="#"><i class="bi bi-globe-americas"></i></a>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="text-white"><i class="bi bi-globe-americas"></i></a>
                 <nav>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SOBRE</a></li>
-                        <li><a href="#">PROJETO</a></li>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#sobre">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#projeto">PROJETO</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="btn-contato">
-                    <a href="#"><button>CONTATO</button></a>
+                    <a href="#"><button class="btn btn-warning">CONTATO</button></a>
                 </div>
             </div>
         </div>
     </header>
-    <section class="banner">
-        <h1>DESCUBRA UM <span>NOVO MUNDO</span></h1>
+
+    
+    <section id="home" class="banner d-flex justify-content-center align-items-center text-center" style="height: 100vh; background-image: url('./styles/img/fundo.jpg'); background-size: cover;">
+        <h1 class="text-white display-4">DESCUBRA UM <span class="text-warning">NOVO MUNDO</span></h1>
     </section>
 
-    <section class="servicos margin-pequena">
+    
+    <section id="sobre" class="sobre py-5">
         <div class="container">
-            <h2>Nossos Serviços</h2>
-            <p>Conteúdo com margem reduzida</p>
+            <h2>Sobre o Conselho Tutelar</h2>
+            <p>
+                O Conselho Tutelar é um órgão que tem como principal função a proteção e defesa dos direitos das crianças e adolescentes...
+            </p>
+            <label for="bairro">Escolha um bairro:</label>
+            <select id="bairro" name="bairro" class="form-select">
+                <option value="">Selecione um bairro</option>
+                
+               
+                <optgroup label="Centro">
+                    <option value="centenario">Centenário</option>
+                    <option value="cidade-alta">Cidade Alta</option>
+                    <option value="cidade-jardim">Cidade Jardim</option>
+                    <option value="nossa-senhora-das-dores">Nossa Senhora das Dores</option>
+                    <option value="nossa-senhora-das-gracas">Nossa Senhora das Graças</option>
+                    <option value="universitario">Universitário</option>
+                </optgroup>
+    
+                
+                <optgroup label="Zona Norte">
+                    <option value="agamenon-magalhaes">Agamenon Magalhães</option>
+                    <option value="alto-do-moura">Alto do Moura</option>
+                    <option value="boa-vista">Boa Vista</option>
+                    <option value="cedro">Cedro</option>
+                    <option value="indianopolis">Indianópolis</option>
+                    <option value="jardim-panorama">Jardim Panorama</option>
+                    <option value="divinopolis">Divinópolis</option>
+                </optgroup>
+    
+               
+                <optgroup label="Zona Sul">
+                    <option value="caiuca">Caiucá</option>
+                    <option value="joao-mota">João Mota</option>
+                    <option value="jose-carlos-de-oliveira">José Carlos de Oliveira</option>
+                    <option value="kennedy">Kennedy</option>
+                    <option value="luiz-gonzaga">Luiz Gonzaga</option>
+                    <option value="manoel-bezerra-lopes">Manoel Bezerra Lopes</option>
+                    <option value="maria-auxiliadora">Maria Auxiliadora</option>
+                </optgroup>
+    
+              
+                <optgroup label="Zona Leste">
+                    <option value="mauricio-de-nassau">Maurício de Nassau</option>
+                    <option value="morro-do-bom-jesus">Morro do Bom Jesus</option>
+                    <option value="petropolis">Petrópolis</option>
+                    <option value="riachao">Riachão</option>
+                    <option value="rendeiras">Rendeiras</option>
+                </optgroup>
+    
+                <optgroup label="Zona Oeste">
+                    <option value="salgado">Salgado</option>
+                    <option value="santa-rosa">Santa Rosa</option>
+                    <option value="sao-francisco">São Francisco</option>
+                    <option value="sao-joao-da-escocia">São João da Escócia</option>
+                    <option value="sao-jose">São José</option>
+                    <option value="serras-do-vale">Serras do Vale</option>
+                </optgroup>
+    
+                
+                <optgroup label="Zona Rural">
+                    <option value="vassoural">Vassoural</option>
+                </optgroup>
+            </select>
         </div>
     </section>
-    <script src="./script/app.js"></script>
+
+    <section id="conselheiros" class="conselheiros py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Conselheiros Tutelares</h2>
+            
+            <!-- Região 1 -->
+            <div class="region">
+                <h3 class="text-center mb-4">Região 1</h3>
+                <div class="row">
+                    <!-- Conselheiro 1 Região 1 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo1.jpg" class="card-img-top" alt="Conselheiro 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 1</h5>
+                                <p class="card-text">Descrição do conselheiro 1 da região 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conselheiro 2 Região 1 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo2.jpg" class="card-img-top" alt="Conselheiro 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 2</h5>
+                                <p class="card-text">Descrição do conselheiro 2 da região 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conselheiro 3 Região 1 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo3.jpg" class="card-img-top" alt="Conselheiro 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 3</h5>
+                                <p class="card-text">Descrição do conselheiro 3 da região 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conselheiro 4 Região 1 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo4.jpg" class="card-img-top" alt="Conselheiro 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 4</h5>
+                                <p class="card-text">Descrição do conselheiro 4 da região 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conselheiro 5 Região 1 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo5.jpg" class="card-img-top" alt="Conselheiro 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 5</h5>
+                                <p class="card-text">Descrição do conselheiro 5 da região 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Região 2 -->
+            <div class="region mt-5">
+                <h3 class="text-center mb-4">Região 2</h3>
+                <div class="row">
+                    <!-- Conselheiro 6 Região 2 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo6.jpg" class="card-img-top" alt="Conselheiro 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 6</h5>
+                                <p class="card-text">Descrição do conselheiro 6 da região 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repita para os outros conselheiros da Região 2 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo7.jpg" class="card-img-top" alt="Conselheiro 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 7</h5>
+                                <p class="card-text">Descrição do conselheiro 7 da região 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conselheiro 8 Região 2 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo8.jpg" class="card-img-top" alt="Conselheiro 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 8</h5>
+                                <p class="card-text">Descrição do conselheiro 8 da região 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conselheiro 9 Região 2 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo9.jpg" class="card-img-top" alt="Conselheiro 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 9</h5>
+                                <p class="card-text">Descrição do conselheiro 9 da região 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conselheiro 10 Região 2 -->
+                    <div class="col-md-2 mb-4">
+                        <div class="card shadow">
+                            <img src="path/to/photo10.jpg" class="card-img-top" alt="Conselheiro 10">
+                            <div class="card-body">
+                                <h5 class="card-title">Conselheiro 10</h5>
+                                <p class="card-text">Descrição do conselheiro 10 da região 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Seção de Contato -->
+            <section id="contato" class="contato py-5 bg-dark text-white">
+                <div class="container">
+                    <h2 class="text-center mb-4">Contato com os Conselheiros</h2>
+                    <p class="text-center mb-4">Caso queira entrar em contato com algum dos conselheiros, preencha o formulário abaixo.</p>
+                    <form action="mailto:email@dominio.com" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" class="form-control" rows="4" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-warning">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    
+    
+
+    
+    <section id="projeto" class="projeto py-5">
+        <div class="container">
+            <h2>Nosso Projeto</h2>
+            <p>
+                O nosso projeto tem como objetivo proporcionar mais acesso e proteção aos direitos das crianças e adolescentes em situação de vulnerabilidade...
+            </p>
+        </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    
+    <script>
+        
+        function smoothScroll(target) {
+            document.querySelector(target).scrollIntoView({
+                behavior: 'smooth' 
+            });
+        }
+
+    
+        document.querySelector('a[href="#sobre"]').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            smoothScroll('#sobre'); 
+        });
+
+        document.querySelector('a[href="#projeto"]').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            smoothScroll('#projeto'); 
+        });
+
+        document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            smoothScroll('#home'); 
+        });
+    </script>
 </body>
 </html>
