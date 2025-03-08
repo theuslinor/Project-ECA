@@ -83,7 +83,6 @@ html {
     }
 }
 
-<<<<<<< HEAD
 .banner h1 {
     font-size: 4em;
     animation: slideIn 1.2s ease-out forwards;
@@ -174,7 +173,6 @@ img {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-=======
 .projeto .container{
     color: blue;
 }
@@ -195,4 +193,3 @@ img {
     grid-column: var(--coluna-texto, 2);
     max-width: 600px;
 }
->>>>>>> 156f167 (nova foto)
