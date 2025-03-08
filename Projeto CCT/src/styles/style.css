@@ -115,3 +115,38 @@
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
   }
   
+  /* ========== SEÇÃO "ENTENDA O CONSELHO" ========== */
+  /* Estilos específicos para a nova seção de conteúdo informativo */
+  .informacoes {
+    background-color: #f9f9f9; /* Fundo claro para facilitar a leitura */
+    color: #333;
+    padding: 40px 0;
+  }
+  
+  .informacoes h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FF4500;
+  }
+  
+  .informacoes article {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .informacoes h3 {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  .informacoes p,
+  .informacoes ul {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  .informacoes ul {
+    margin-left: 20px;
+    list-style: disc;
+  }
+  
