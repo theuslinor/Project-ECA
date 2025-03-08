@@ -1,390 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conselho Tutelar</title>
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/button-top.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conselho Tutelar</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/button-top.css">
 </head>
 <body>
 
-    <header id="header" class="bg-dark text-white py-3 fixed-top">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="text-white"><i class="bi bi-globe-americas"></i></a>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#home">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#sobre">SOBRE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#projeto">PROJETO</a>
-                        </li>
-                </nav>
-                <div class="btn-contato">
-                    <a href="#"><button class="btn btn-warning">CONTATO</button></a>
-                </div>
-            </div>
+  <!-- NAV BAR -->
+  <header id="header" class="bg-dark text-white py-3 fixed-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="text-white"><i class="bi bi-globe-americas"></i></a>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#sobre">SOBRE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projeto">PROJETO</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="btn-contato">
+          <a href="#contato"><button class="btn btn-warning">CONTATO</button></a>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    
-    <section id="home" class="banner d-flex justify-content-center align-items-center text-center" style="height: 100vh; background-image: url('./styles/img/fundo.jpg'); background-size: cover;">
-        <h1 class="text-white display-4">DESCUBRA UM <span class="text-warning">NOVO MUNDO</span></h1>
-    </section>
+  <!-- Seção Home -->
+  <section id="home" class="banner d-flex justify-content-center align-items-center text-center" style="height: 100vh; background-image: url('./styles/img/fundo.jpg'); background-size: cover;">
+    <h1 class="text-white display-4">DESCUBRA UM <span class="text-warning">NOVO MUNDO</span></h1>
+  </section>
 
-    <button id="btnTopo" class="btn-topo">▲</button>
-    
-    <section id="sobre" class="sobre py-5">
-        <div class="container">
-            <h2>Sobre o Conselho Tutelar</h2>
-            <p>
-                O Conselho Tutelar é um órgão que tem como principal função a proteção e defesa dos direitos das crianças e adolescentes...
-            </p>
-            <label for="bairro">Escolha um bairro:</label>
-            <select id="bairro" name="bairro" class="form-select">
-                <option value="">Selecione um bairro</option>
-                
-               
-                <optgroup label="Centro">
-                    <option value="centenario">Centenário</option>
-                    <option value="cidade-alta">Cidade Alta</option>
-                    <option value="cidade-jardim">Cidade Jardim</option>
-                    <option value="nossa-senhora-das-dores">Nossa Senhora das Dores</option>
-                    <option value="nossa-senhora-das-gracas">Nossa Senhora das Graças</option>
-                    <option value="universitario">Universitário</option>
-                </optgroup>
-    
-                
-                <optgroup label="Zona Norte">
-                    <option value="agamenon-magalhaes">Agamenon Magalhães</option>
-                    <option value="alto-do-moura">Alto do Moura</option>
-                    <option value="boa-vista">Boa Vista</option>
-                    <option value="cedro">Cedro</option>
-                    <option value="indianopolis">Indianópolis</option>
-                    <option value="jardim-panorama">Jardim Panorama</option>
-                    <option value="divinopolis">Divinópolis</option>
-                </optgroup>
-    
-               
-                <optgroup label="Zona Sul">
-                    <option value="caiuca">Caiucá</option>
-                    <option value="joao-mota">João Mota</option>
-                    <option value="jose-carlos-de-oliveira">José Carlos de Oliveira</option>
-                    <option value="kennedy">Kennedy</option>
-                    <option value="luiz-gonzaga">Luiz Gonzaga</option>
-                    <option value="manoel-bezerra-lopes">Manoel Bezerra Lopes</option>
-                    <option value="maria-auxiliadora">Maria Auxiliadora</option>
-                </optgroup>
-    
-              
-                <optgroup label="Zona Leste">
-                    <option value="mauricio-de-nassau">Maurício de Nassau</option>
-                    <option value="morro-do-bom-jesus">Morro do Bom Jesus</option>
-                    <option value="petropolis">Petrópolis</option>
-                    <option value="riachao">Riachão</option>
-                    <option value="rendeiras">Rendeiras</option>
-                </optgroup>
-    
-                <optgroup label="Zona Oeste">
-                    <option value="salgado">Salgado</option>
-                    <option value="santa-rosa">Santa Rosa</option>
-                    <option value="sao-francisco">São Francisco</option>
-                    <option value="sao-joao-da-escocia">São João da Escócia</option>
-                    <option value="sao-jose">São José</option>
-                    <option value="serras-do-vale">Serras do Vale</option>
-                </optgroup>
-    
-                
-                <optgroup label="Zona Rural">
-                    <option value="vassoural">Vassoural</option>
-                </optgroup>
-            </select>
+  <!-- Botão para voltar ao topo -->
+  <button id="btnTopo" class="btn-topo">▲</button>
 
-    <section class="projeto">
-        <div class="container">
-            <h2>PROJETO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus distinctio doloribus suscipit aperiam quos. Inventore, adipisci dolores vitae delectus enim deserunt maxime aspernatur aut odit saepe possimus veniam sit expedita.</p>
+  <!-- Seção Sobre -->
+  <section id="sobre" class="sobre py-5">
+    <div class="container">
+      <h2>Sobre o Conselho Tutelar</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            O Conselho Tutelar é um órgão responsável por zelar pelos direitos das crianças e adolescentes, atuando em casos de violação desses direitos, como abuso, negligência ou exploração. Ele é composto por membros eleitos pela comunidade e tem a função de encaminhar medidas protetivas e garantir o cumprimento dos direitos previstos pelo Estatuto da Criança e do Adolescente (ECA).
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="conselheiros" class="conselheiros py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Conselheiros Tutelares</h2>
-            
-            <!-- Região 1 -->
-            <div class="region">
-                <h3 class="text-center mb-4">Região 1</h3>
-                <div class="row">
-                    <!-- Conselheiro 1 Região 1 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato1.jpeg" class="card-img-top" alt="Conselheiro 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 1</h5>
-                                <p class="card-text">Descrição do conselheiro 1 da região 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conselheiro 2 Região 1 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato2.jpeg" class="card-img-top" alt="Conselheiro 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 2</h5>
-                                <p class="card-text">Descrição do conselheiro 2 da região 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conselheiro 3 Região 1 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato3.jpeg" class="card-img-top" alt="Conselheiro 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 3</h5>
-                                <p class="card-text">Descrição do conselheiro 3 da região 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conselheiro 4 Região 1 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato4.jpeg" class="card-img-top" alt="Conselheiro 4">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 4</h5>
-                                <p class="card-text">Descrição do conselheiro 4 da região 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conselheiro 5 Região 1 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato5.jpeg" class="card-img-top" alt="Conselheiro 5">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 5</h5>
-                                <p class="card-text">Descrição do conselheiro 5 da região 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Região 2 -->
-            <div class="region mt-5">
-                <h3 class="text-center mb-4">Região 2</h3>
-                <div class="row">
-                    <!-- Conselheiro 6 Região 2 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato3.jpeg" class="card-img-top" alt="Conselheiro 6">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 6</h5>
-                                <p class="card-text">Descrição do conselheiro 6 da região 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Repita para os outros conselheiros da Região 2 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato3.jpeg" class="card-img-top" alt="Conselheiro 7">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 7</h5>
-                                <p class="card-text">Descrição do conselheiro 7 da região 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conselheiro 8 Região 2 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato3.jpeg" class="card-img-top" alt="Conselheiro 8">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 8</h5>
-                                <p class="card-text">Descrição do conselheiro 8 da região 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conselheiro 9 Região 2 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato3.jpeg" class="card-img-top" alt="Conselheiro 9">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 9</h5>
-                                <p class="card-text">Descrição do conselheiro 9 da região 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Conselheiro 10 Região 2 -->
-                    <div class="col-md-2 mb-4">
-                        <div class="card shadow" onclick="destacarConselheiro(this)">
-                            <img src="./styles/img/conselho/gato3.jpeg" class="card-img-top" alt="Conselheiro 10">
-                            <div class="card-body">
-                                <h5 class="card-title">Conselheiro 10</h5>
-                                <p class="card-text">Descrição do conselheiro 10 da região 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Seção de Contato -->
-            <section id="contato" class="contato py-5 bg-dark text-white">
-                <div class="container">
-                    <h2 class="text-center mb-4">Contato com os Conselheiros</h2>
-                    <p class="text-center mb-4">Caso queira entrar em contato com algum dos conselheiros, preencha o formulário abaixo.</p>
-                    <form action="mailto:email@dominio.com" method="post" enctype="text/plain">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" name="nome" class="form-control" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="mensagem">Mensagem</label>
-                                <textarea id="mensagem" name="mensagem" class="form-control" rows="4" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-warning">Enviar Mensagem</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
+  <!-- Seção Projeto Unificada (conteúdo detalhado) -->
+  <section id="projeto" class="projeto py-5">
+    <div class="container">
+      <h2>Nosso Projeto</h2>
+      <!-- Conteúdo detalhado do projeto -->
+      <p>
+        História 1: O Melhor Amigo de João<br>
+        João era um menino tímido que sempre sonhava em ter um cachorro. Um dia, seus pais o surpreenderam com um filhote de labrador. 
+        João o chamou de Max. Desde então, eles se tornaram inseparáveis. Max acompanhava João em todas as suas aventuras, 
+        desde brincar no parque até explorar trilhas na floresta. A amizade entre João e Max era tão forte que João se sentia mais confiante e feliz. 
+        Com Max ao seu lado, João percebeu que a felicidade estava nas pequenas coisas, 
+        como jogar uma bola para seu melhor amigo ou apenas descansar ao lado dele depois de um longo dia de brincadeiras.
+      </p>
+      
+      <!-- Alternando entre texto e imagem -->
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <img src="./styles/img/conselho/gato1.jpeg" class="img-fluid" alt="Imagem 1">
         </div>
-    </section>
-    
-    
-    
-
-    
-    <section id="projeto" class="projeto py-5">
-        <div class="container">
-            <h2>Nosso Projeto</h2>
-            <p>
-                O nosso projeto tem como objetivo proporcionar mais acesso e proteção aos direitos das crianças e adolescentes em situação de vulnerabilidade...
-            </p>
+        <div class="col-md-6">
+          <p>
+            História 2: O Jardim de Maria<br>
+            Maria adorava flores e sempre sonhou em ter um jardim só para ela. 
+            Um dia, sua avó a levou a um viveiro de plantas e deixou que ela escolhesse suas flores favoritas. 
+            Maria plantou margaridas, rosas e girassóis em seu novo jardim. 
+            Todos os dias, ela regava as plantas e cuidava delas com muito carinho. Logo, 
+            o jardim floresceu e se tornou o lugar preferido de Maria. 
+            Ela adorava sentar-se entre as flores e ler seus livros favoritos. 
+            Cuidar do jardim trouxe muita alegria para Maria e a fez perceber como a natureza pode ser maravilhosa e reconfortante.
+          </p>
         </div>
-        <section id="projeto" class="projeto py-5">
-            <div class="container">
-                <h2>Nosso Projeto</h2>
-                <p>
-                    História 1: O Melhor Amigo de João
-                    João era um menino tímido que sempre sonhava em ter um cachorro. Um dia, seus pais o surpreenderam com um filhote de labrador. 
-                    João o chamou de Max. Desde então, eles se tornaram inseparáveis. Max acompanhava João em todas as suas aventuras, 
-                    desde brincar no parque até explorar trilhas na floresta. A amizade entre João e Max era tão forte que João se sentia mais confiante e feliz. 
-                    Com Max ao seu lado, João percebeu que a felicidade estava nas pequenas coisas, 
-                    como jogar uma bola para seu melhor amigo ou apenas descansar ao lado dele depois de um longo dia de brincadeiras.                </p>
-                
-                <!-- Alternando entre texto e imagem -->
-                <div class="row align-items-center mb-4">
-                    <div class="col-md-6">
-                        <img src="./styles/img/conselho/gato3.jpeg" class="img-fluid" alt="Imagem 1">
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            História 2: O Jardim de Maria
-                            Maria adorava flores e sempre sonhou em ter um jardim só para ela. 
-                            Um dia, sua avó a levou a um viveiro de plantas e deixou que ela escolhesse suas flores favoritas. 
-                            Maria plantou margaridas, rosas e girassóis em seu novo jardim. 
-                            Todos os dias, ela regava as plantas e cuidava delas com muito carinho. Logo, 
-                            o jardim floresceu e se tornou o lugar preferido de Maria. 
-                            Ela adorava sentar-se entre as flores e ler seus livros favoritos. 
-                            Cuidar do jardim trouxe muita alegria para Maria e a fez perceber como a natureza pode ser maravilhosa e reconfortante.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="row align-items-center mb-4">
-                    <div class="col-md-6 order-md-2">
-                        <img src="./styles/img/conselho/gato3.jpeg" class="img-fluid" alt="Imagem 2">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <p>
-                            O projeto também oferece suporte psicológico e orientação para as famílias, com acompanhamento contínuo...
-                        </p>
-                    </div>
-                </div>
-        
-                <div class="row align-items-center mb-4">
-                    <div class="col-md-6">
-                        <img src="./styles/img/conselho/gato3.jpeg" class="img-fluid" alt="Imagem 3">
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            História 3: A Música de Pedro
-                            Pedro sempre foi apaixonado por música, mas nunca teve a chance de aprender a tocar um instrumento. 
-                            Um dia, a escola de Pedro ofereceu aulas gratuitas de violão. Ele se inscreveu imediatamente. 
-                            Nas primeiras semanas, Pedro encontrou dificuldades, mas com determinação e prática, ele começou a melhorar. 
-                            Sua professora de música o incentivava e elogiava seus progressos. 
-                            Quando Pedro conseguiu tocar sua primeira música inteira, sentiu uma felicidade enorme. 
-                            Ele tocava para sua família e amigos, que ficavam impressionados com seu talento.
-                            A música trouxe muita alegria para a vida de Pedro e o fez sentir que podia alcançar qualquer coisa com dedicação.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Final do conteúdo -->
-                <p>
-                    Com cada passo, o projeto se fortalece e contribui para a melhoria da qualidade de vida das crianças e adolescentes que atendemos.
-                </p>
-            </div>
-        </section>
-        
-    </section>
+      </div>
+      
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6 order-md-2">
+          <img src="./styles/img/conselho/gato2.jpeg" class="img-fluid" alt="Imagem 2">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <p>
+            O projeto também oferece suporte psicológico e orientação para as famílias, com acompanhamento contínuo...
+          </p>
+        </div>
+      </div>
+  
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <img src="./styles/img/conselho/gato3.jpeg" class="img-fluid" alt="Imagem 3">
+        </div>
+        <div class="col-md-6">
+          <p>
+            História 3: A Música de Pedro<br>
+            Pedro sempre foi apaixonado por música, mas nunca teve a chance de aprender a tocar um instrumento. 
+            Um dia, a escola de Pedro ofereceu aulas gratuitas de violão. Ele se inscreveu imediatamente. 
+            Nas primeiras semanas, Pedro encontrou dificuldades, mas com determinação e prática, ele começou a melhorar. 
+            Sua professora de música o incentivava e elogiava seus progressos. 
+            Quando Pedro conseguiu tocar sua primeira música inteira, sentiu uma felicidade enorme. 
+            Ele tocava para sua família e amigos, que ficavam impressionados com seu talento.
+            A música trouxe muita alegria para a vida de Pedro e o fez sentir que podia alcançar qualquer coisa com dedicação.
+          </p>
+        </div>
+      </div>
+  
+      <p>
+        Com cada passo, o projeto se fortalece e contribui para a melhoria da qualidade de vida das crianças e adolescentes que atendemos.
+      </p>
+    </div>
+  </section>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- Seção de Contato -->
+  <section id="contato" class="contato py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Contato com os Conselheiros</h2>
+      <p class="text-center mb-4">Caso queira entrar em contato com algum dos conselheiros, preencha o formulário abaixo.</p>
+      <form action="mailto:email@dominio.com" method="post" enctype="text/plain">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="col-12 mb-3">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form-control" rows="4" required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-warning">Enviar Mensagem</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
 
-    
-    <script>
-        function smoothScroll(target) {
-            document.querySelector(target).scrollIntoView({
-                behavior: 'smooth' 
-            });
-        }
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="/Projeto CCT/src/script/buttom-top.js"></script>
+  <script>
+    // Função para rolagem suave para as seções
+    function smoothScroll(target) {
+      document.querySelector(target).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
 
-    
-        document.querySelector('a[href="#sobre"]').addEventListener('click', function(event) {
-            event.preventDefault(); 
-            smoothScroll('#sobre'); 
-        });
-
-        document.querySelector('a[href="#projeto"]').addEventListener('click', function(event) {
-            event.preventDefault(); 
-            smoothScroll('#projeto'); 
-        });
-
-        document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
-            event.preventDefault(); 
-            smoothScroll('#home'); 
-        });
-
-        function destacarConselheiro(card) {
-    // Remove a classe de destaque de todos os conselheiros
-    const conselheiros = document.querySelectorAll('.card');
-    conselheiros.forEach(conselheiro => {
-        conselheiro.classList.remove('conselheiro-destacado');
+    // Eventos de clique para a navbar
+    document.querySelector('a[href="#sobre"]').addEventListener('click', function(event) {
+      event.preventDefault();
+      smoothScroll('#sobre');
     });
 
-    // Adiciona a classe de destaque ao conselheiro clicado
-    card.classList.add('conselheiro-destacado');
-}
+    document.querySelector('a[href="#projeto"]').addEventListener('click', function(event) {
+      event.preventDefault();
+      smoothScroll('#projeto');
+    });
 
-    </script>
-
-<script src="/Projeto CCT/src/script/buttom-top.js"></script>
+    document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
+      event.preventDefault();
+      smoothScroll('#home');
+    });
+  </script>
 
 </body>
 </html>
