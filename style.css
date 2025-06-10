@@ -5,94 +5,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  padding-top: 80px;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 section {
   padding: 60px 0;
-}
-
-.custom-header {
-  padding: 24px 0;
-  background-color: #f8f9fa;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-.logo-img {
-  max-width: 80px;
-  max-height: 50px;
-  height: auto;
-}
-
-nav.desktop-nav {
-  display: flex;
-  justify-content: end;
-}
-
-nav.desktop-nav a {
-  color: #000;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 30px;
-  height: 24px;
-  gap: 5px;
-}
-
-.hamburger span {
-  height: 3px;
-  width: 100%;
-  background: #333;
-  border-radius: 3px;
-  transition: transform 0.4s, opacity 0.4s;
-}
-
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-.mobile-nav {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  position: absolute;
-  top: 70px;
-  right: 0;
-  width: 100%;
-  padding: 0 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 999;
-}
-
-.mobile-nav.open {
-  max-height: 300px;
-  padding: 20px;
-}
-
-.mobile-nav a {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-  text-decoration: none;
-  color: #000;
 }
 
 .hero {
@@ -112,11 +32,10 @@ nav.desktop-nav a {
   font-size: 1.5rem;
 }
 
-.consultorio {
-  height: 400px;
-  object-fit: cover;
+.conselho { 
   width: 100%;
-  display: block;
+  object-fit: cover; /* Importante para que object-position funcione */
+  object-position: center top; /* Exemplo: Alinha o topo da imagem ao centro horizontal */
 }
 
 .picture,
@@ -171,15 +90,10 @@ footer p {
   font-size: 0.9rem;
 }
 
-.feedback,
-.alert {
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
 @media (max-width: 768px) {
-  nav.desktop-nav {
-    display: none;
+  .sidebar{
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
   }
 
   .hamburger {
@@ -194,7 +108,4 @@ footer p {
     font-size: 1.2rem;
   }
 
-  .consultorio {
-    height: 200px;
-  }
 }
