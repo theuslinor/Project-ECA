@@ -6,15 +6,21 @@
   <title>Conselho Tutelar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <link rel="icon" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar --> 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
     <div class="container">
       <!-- Logo -->
-      <a class="navbar-brand fs-4" href="#">Conselho Tutelar</a>
+      <a class="navbar-brand fs-6 fs-md-4" href="#">Conselho Tutelar: Heróis do Cotidiano</a>
       <!--Toggle Button-->
       <button
         class="navbar-toggler shadow-none border-0"
@@ -26,7 +32,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
       <!--SideBar-->
       <div class="sidebar offcanvas offcanvas-start"
         tabindex="-1"
@@ -35,7 +40,7 @@
         
         <!-- Sidebar Header -->
         <div class="offcanvas-header text-white border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Conselho Tutelar: Heróis do Cotidiano</h5>
           <button
             type="button"
             class="btn-close btn-close-white shadow-none"
@@ -46,16 +51,13 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-white" href="#sobre">Sobre o Conselho</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#sobre">Sobre Nós</a>
+              <a class="nav-link text-white" href="#situacoes">Situações para Acionar</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#atuacao">Atuação</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#contato">Entre em Contato</a>
+              <a class="nav-link text-white" href="#mitosverdades">Mitos e Verdades</a>
             </li>
           </ul>
         </div>
@@ -63,17 +65,10 @@
     </div>
   </nav>
 
-  <main>
-    <section class="w-100 vh-100 d-flex flex-column
-      justify-content-center align-items-center text-white fs-1">
-      <h1>Conselho Tutelar</h1>
-    </section>
-  </main>
-
   <div class="row picture">
     <div class="col-12 text-center">
       <picture>
-        <img src="img/crianca-capa.jpg" alt="Conselho Tutelar" class="img-fluid conselho">
+        <img src="img/crianca-capa.png" alt="Conselho Tutelar" class="img-fluid conselho">
       </picture>
     </div>
   </div>
@@ -82,8 +77,7 @@
   <section id="home" class="hero text-white text-center py-5">
     <div class="container">
       <h1>Conselho Tutelar</h1>
-      <p>Garantindo os direitos de crianças e adolescentes</p>
-      <a href="#contato" class="btn btn-primary btn-lg">Fale Conosco</a>
+      <p>Eles não querem tirar seu filho, querem proteger ele!</p>
     </div>
   </section>
 
@@ -91,65 +85,88 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h1 class="mb-4">O que é o Conselho Tutelar?</h1>
-          <p>O Conselho Tutelar é um órgão permanente e autônomo encarregado de zelar pelo cumprimento dos direitos da criança e do adolescente, conforme estabelecido pelo Estatuto da Criança e do Adolescente (ECA).</p>
-          <h1 class="mt-5 mb-4">Nossa missão</h1>
-          <p>Agir com responsabilidade, ética e sensibilidade para proteger a infância e a juventude, atendendo denúncias, promovendo orientações e articulando ações com a rede de proteção.</p>
+          <h1 class="mb-4">Qual papel do conselho tutelar?</h1>
+          <p>Quando se fala em Conselho Tutelar, muita gente já pensa: “Vish, vai dar problema!”. Mas a verdade é que o Conselho não é um bicho-papão — ele está aqui para <strong>proteger crianças e adolescentes em situação de risco.</strong></p>
+          <p> Seu papel é garantir que os direitos dos pequenos sejam respeitados de verdade. Quando algo ameaça a segurança, a saúde ou o bem-estar de uma criança — como maus-tratos, abandono ou evasão escolar — o Conselho entra em ação.
+          <strong>Ele ouve, orienta, encaminha e acompanha </strong>, sempre buscando soluções junto com a família e a rede de apoio. Nada de punição: o foco é <strong>cuidar e proteger.</strong>
+          Pensa assim: se os direitos da criança são uma plantinha, o Conselho é o regador que ajuda ela a crescer forte.</p>
+          <h1 class="mt-5 mb-4">Como escolhemos nossos conselheiros?</h1>
+          <p>E sabia que os conselheiros são eleitos pela população? Sim! Você pode — e deve — participar das eleições e escolher quem vai representar essa função tão importante na sua cidade.
+            A cada quatro anos, acontece uma eleição em que qualquer pessoa com título de eleitor em dia pode votar para escolher quem vai cuidar dos direitos das crianças e adolescentes na cidade.</p>
+            <p>É uma votação parecida com a das eleições normais, só que para uma função super importante na comunidade. Seu voto ajuda a garantir que pessoas comprometidas estejam no Conselho Tutelar.</p></p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="img/imgpagina/infancia.jpg" alt="Infância protegida" class="img-fluid rounded-circle">
+          <img src="img/criancas.png" alt="Infância protegida" class="img-fluid rounded-circle">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="atuacao" class="py-5">
+  <section id="situacoes" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5">Áreas de Atuação</h2>
+      <h2 class="text-center mb-5">Situações para Acionar</h2>
       <div class="row text-center">
+
         <div class="col-md-4 mb-4">
           <i class="bi bi-shield-lock" style="font-size: 3rem;"></i>
           <h4 class="mt-3">Violência e Negligência</h4>
-          <p>Atendimento de denúncias de abuso, negligência e maus-tratos.</p>
+          <p>Em casos de abuso físico, sexual, psicológico, negligência ou maus-tratos contra crianças e adolescentes.</p>
         </div>
+
         <div class="col-md-4 mb-4">
           <i class="bi bi-house-door" style="font-size: 3rem;"></i>
-          <h4 class="mt-3">Apoio Familiar</h4>
-          <p>Encaminhamento e orientação para famílias em situação de vulnerabilidade.</p>
+          <h4 class="mt-3">Condições de Risco Familiar</h4>
+          <p>Quando a criança ou adolescente está em ambiente familiar com risco à sua integridade ou bem-estar.</p>
         </div>
+
         <div class="col-md-4 mb-4">
           <i class="bi bi-people" style="font-size: 3rem;"></i>
-          <h4 class="mt-3">Rede de Proteção</h4>
-          <p>Articulação com escolas, saúde, assistência social e outros órgãos.</p>
+          <h4 class="mt-3">Falta de Assistência ou Supervisão</h4>
+          <p>Quando há ausência de responsáveis, evasão escolar, trabalho infantil ou abandono.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-journal-x" style="font-size: 3rem;"></i>
+          <h4 class="mt-3">Faltas na Escola</h4>
+          <p>A educação básica é obrigatória para crianças e adolescentes dos 4 aos 17 anos. Estar na escola não é só uma obrigação — é um direito fundamental que ninguém pode tirar.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-capsule-pill" style="font-size: 3rem;"></i>
+          <h4 class="mt-3">Uso de Drogas por Menores</h4>
+          <p>O Conselho Tutelar pode ser acionado para orientar a família, buscar apoio médico e psicológico, e garantir que o jovem tenha acesso a tratamentos.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-check2-square" style="font-size: 3rem;"></i>
+          <h4 class="mt-3">Garantir Direitos</h4>
+          <p>Quando há violação de direitos básicos como educação, saúde, alimentação, convivência familiar e comunitária.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contato" class="py-5">
-    <div class="form-box container">
-      <h2 class="text-center mb-4">Entre em Contato</h2>
-      <form>
-        <div class="row g-3">
-          <div class="col-12">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
-          </div>
-          <div class="col-12">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
-          </div>
-          <div class="col-12">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" rows="4" placeholder="Descreva sua dúvida ou denúncia" required></textarea>
-          </div>
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-primary px-5">Enviar</button>
-          </div>
+
+
+  <section id="mitosverdade" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1 class="mb-4">Qual papel do conselho tutelar?</h1>
+          <p>Quando se fala em Conselho Tutelar, muita gente já pensa: “Vish, vai dar problema!”. Mas a verdade é que o Conselho não é um bicho-papão — ele está aqui para <strong>proteger crianças e adolescentes em situação de risco.</strong></p>
+          <p>Seu papel é garantir que os direitos dos pequenos sejam respeitados de verdade. Quando algo ameaça a segurança, a saúde ou o bem-estar de uma criança — como maus-tratos, abandono ou evasão escolar — o Conselho entra em ação.
+          <strong>Ele ouve, orienta, encaminha e acompanha</strong>, sempre buscando soluções junto com a família e a rede de apoio. Nada de punição: o foco é <strong>cuidar e proteger.</strong>
+          Pensa assim: se os direitos da criança são uma plantinha, o Conselho é o regador que ajuda ela a crescer forte.</p>
+
+          <h1 class="mt-5 mb-4">Como escolhemos nossos conselheiros?</h1>
+          <p>E sabia que os conselheiros são eleitos pela população? Sim! Você pode — e deve — participar das eleições e escolher quem vai representar essa função tão importante na sua cidade.</p>
+          <p>A cada quatro anos, acontece uma eleição em que qualquer pessoa com título de eleitor em dia pode votar para escolher quem vai cuidar dos direitos das crianças e adolescentes na cidade.</p>
+          <p>É uma votação parecida com a das eleições normais, só que para uma função super importante na comunidade. Seu voto ajuda a garantir que pessoas comprometidas estejam no Conselho Tutelar.</p>
         </div>
-      </form>
+      </div>
     </div>
   </section>
+
 
   <footer class="bg-dark text-white text-center py-3">
     <div class="container">
