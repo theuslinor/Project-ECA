@@ -19,6 +19,7 @@ html{
     rgba(0, 0, 0, 0)
   );
 
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(18px);
 }
 
@@ -26,8 +27,6 @@ html{
   height: 100vh;
   overflow-y: auto;
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 section {
